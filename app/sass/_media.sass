@@ -1,0 +1,66 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+    .toggle-mnu
+        display: none
+    .search_form
+        display: block     
+
+// ≥992px
++media-breakpoint-down(md)
+    .toggle-mnu
+        display: block
+    .search_form
+        display: none     
+    .top-mnu
+        display: none
+    .block_title h3 a
+        margin-top: 50px           
+// ≥768px
++media-breakpoint-down(sm)
+    .block_title h3 a
+        margin-top: 50px
+    .slider-item-text
+        width: 100%
+        height: 100%
+        margin: 0
+             
+
+// ≥576px
++media-breakpoint-down(xs)
+    .logo-wrap
+        span
+            display: none
+    .block_title h3 a
+        margin-top: 50px        
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+    .toggle-mnu
+        display: block
+    .search_form
+        display: none    
+    .top-mnu
+        display: none    
+
+// ≤1200px
++media-breakpoint-up(xl)
+    .toggle-mnu
+        display: none
+    .search_form
+        display: block 
+    .top-mnu
+	    display: block    

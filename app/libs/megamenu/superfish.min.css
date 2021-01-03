@@ -1,0 +1,75 @@
+.sf-menu,
+.sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.sf-menu li {
+    position: relative
+}
+.sf-menu ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    z-index: 99
+}
+.sf-menu>li {
+    float: left
+}
+.sf-menu li:hover>ul,
+.sf-menu li.sfHover>ul {
+    display: block
+}
+.sf-menu a {
+    display: block;
+    position: relative
+}
+.sf-menu ul ul {
+    top: 0;
+    left: 100%
+}
+.sf-menu {
+    float: left;
+    margin-bottom: 1em
+}
+.sf-menu ul {
+    min-width: 12em;
+    *width: 12em
+}
+.sf-menu a {
+    padding: .75em 1em;
+    text-decoration: none;
+    zoom: 1
+}
+.sf-menu li {
+    white-space: nowrap;
+    *white-space: normal;
+    -webkit-transition: background .2s;
+    transition: background .2s
+}
+.sf-menu li:hover,
+.sf-menu li.sfHover {
+    -webkit-transition: none;
+    transition: none
+}
+.sf-arrows .sf-with-ul {
+    padding-right: 2.5em;
+    *padding-right: 1em
+}
+.sf-arrows .sf-with-ul:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    margin-top: -3px;
+    height: 0;
+    width: 0;
+    border: 5px solid transparent;
+    border-top-color: #dfeeff;
+    border-top-color: rgba(255, 255, 255, .5)
+}
+.sf-arrows ul .sf-with-ul:after {
+    margin-top: -5px;
+    margin-right: -3px;
+}

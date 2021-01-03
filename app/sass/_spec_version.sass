@@ -1,0 +1,412 @@
+$spec_yellow: #ffff00
+$spec_blue: #9FD7FF
+//================================================================================================
+.special-aaVersion-on
+  &.special-aaImage-off
+    img, .img, .bg, .particles-js, .grid_item_img, .card_img
+      display: none !important
+// special-aaVersion-on===========================================================================
+.special-aaVersion-on
+  & *
+    &:after, &:before
+      display: none
+  #particles-js
+    display: none !important
+  & body
+    background-image: none  
+  & body, section, footer, header, .top, .copiright, input[type="submit"], #toTop, button, .loader_inner, .white_box
+    background-color: #fff!important
+    color: #000!important
+  & .section
+	    &_head
+        background: #fff!important
+        color: #000!important
+  & .indicators
+      .indicator-item
+        background-color: transparent
+        border: 3px solid #000000
+        &.active
+          background-color: #000000
+  & header, footer, .content, .breadcrumb
+    & *
+      a
+        color: #000!important
+        &:hover
+          background-color: #000
+          color: #fff!important
+          & h1, h2, h3, h4, p, span, li
+            color: #fff!important
+        &:focus
+          background-color: #000
+          color: #fff!important
+        &:active
+          background-color: #000
+          color: #fff!important
+  & h1, h2, h3, h4, p, span, li
+    color: #000!important
+  & .btn
+    background-color: #fff!important
+    border: 2px solid #000!important
+    &:hover
+      background-color: #000!important
+      color: #fff!important
+  & ul, li, a
+    border-color: #000!important
+    &::before
+  & ul
+    background-color: #fff
+    ul
+      border: 2px solid #000!important
+  & *
+    input, select, .select2-container, .filter, button[data-state="active"],
+      border-color: #000
+  & ::placeholder
+    color: #000!important
+  & i
+    border: none
+    background-color: transparent
+  & .select2-highlighted
+    background-color: #000000
+    color: #fff!important
+  & input[type="submit"]:hover,
+      background-color: #000!important
+      color: #fff!important
+  & #toTop
+    border: 2px solid #000!important
+  & .breadcrumb
+    color: #000
+    &::before
+      background-color: #000
+  & .news-item, .sidebar
+      background-color: #fff
+      border: 2px solid #000!important
+      &:before
+        display: none
+        background-image: linear-gradient(to bottom,rgba(216,216,216,0) 6%,#000 100%)
+      &-img
+        &:before
+          display: none
+          background-image: linear-gradient(to bottom,rgba(216,216,216,0) 6%,#000 100%)
+  & .collective-item
+    border: 2px solid #000!important
+    &-img
+      background-color: #fff!important
+      &:before
+        display: none
+    &-body
+      &:before
+        display: none
+  & input, textarea, .white_box
+    border: 2px solid #000!important 
+  & .portner_item
+    a, i
+      background: transparent!important
+      color: #000!important 
+  & .section_directions_item
+    border: 2px solid #000!important          
+// special-aaVersion-on yellow==============================================================================================
+.special-aaVersion-on
+  &.special-aaColor-yellow
+    & .fa
+      color: $spec_yellow!important
+      display: block
+      position: relative
+      z-index: 999
+    & input, textarea, label
+      color: $spec_yellow!important
+    & * a
+      color: $spec_yellow!important
+      &:hover
+        background: $spec_yellow
+        color: #000
+    & body, section, footer, header, .top, .copiright, input[type="submit"], #toTop, button, .loader_inner, .news-calendar, .wrapper_white, .white_box, .section_directions_item, .block_box,.grid_item_content, .big_block .grid_item_content, .card_news, .card, .card-reveal
+      background-color: #000!important
+      color: $spec_yellow!important
+    & .card_news, .card, .card-reveal, .grid_item
+      border: 2px solid $spec_yellow!important 
+    & .indicators
+      .indicator-item
+        background-color: transparent
+        border: 3px solid $spec_yellow
+        &.active
+          background-color: $spec_yellow          
+    & header, footer, .content, .breadcrumb
+      & *
+        a
+          color: $spec_yellow!important
+          &:hover
+            background-color: $spec_yellow
+            color: #000!important
+            & h1, h2, h3, h4, p, span, li
+              color: #000!important
+          &:focus
+            background-color: $spec_yellow
+            color: #000!important
+          &:active
+            background-color: $spec_yellow
+            color: #000!important
+    & h1, h2, h3, h4, p, span, li
+      color: $spec_yellow!important
+    & .btn
+      border: 2px solid $spec_yellow!important 
+      background: #000!important 
+      color: $spec_yellow!important
+      &:hover
+        background: $spec_yellow!important
+        color: #000!important
+    & ul, li, a
+      border-color: $spec_yellow!important
+      &::before
+    & ul
+      background-color: #000
+      ul
+        border: 2px solid $spec_yellow!important
+    & *
+      input, select, .select2-container, .filter, button[data-state="active"],
+        border-color: $spec_yellow
+    & ::placeholder
+      color: $spec_yellow!important
+    & i
+      border: none
+      background-color: transparent
+    & .select2-highlighted
+      background-color: $spec_yellow
+      color: #000!important
+    & input[type="submit"]:hover
+        background-color: #000!important
+        color: $spec_yellow!important
+    & .breadcrumb
+      color: $spec_yellow
+      &::before
+        background-color: $spec_yellow
+    & .select2-container.select2-drop-above .select2-choice
+      background: #000
+    & #toTop
+      border: 2px solid $spec_yellow!important
+    & .news-item, .doc_item, .sidebar
+        background-color: #000
+        border: 2px solid $spec_yellow
+        &:before
+          display: none
+          background-image: linear-gradient(to bottom,rgba(216,216,216,0) 6%,$spec_yellow 100%)
+        &-img
+          &:before
+            display: none
+            background-image: linear-gradient(to bottom,rgba(216,216,216,0) 6%,$spec_yellow 100%)
+    & .collective-item
+      background-color: #000!important
+      border: 2px solid $spec_yellow!important
+      &-img
+        background-color: #000!important
+        &:before
+          display: none
+      &-body
+        &:before
+          display: none
+    & input, textarea, .white_box
+        border: 2px solid $spec_yellow!important 
+    & .portner_item
+      a, i
+        background: transparent!important
+        color: $spec_yellow!important 
+    & .section_directions_item
+      border: 2px solid $spec_yellow!important       
+// special-aaVersion-on blue==============================================================================================
+.special-aaVersion-on
+  &.special-aaColor-blue
+    & input, textarea, label, .fa
+      color: #143c5a!important
+    & * a
+      color: #143c5a!important
+    & body, section, footer, header, .top, .copiright, input[type="submit"], #toTop, button, .loader_inner, .news-calendar, .wrapper_white, .white_box, .section_directions_item, .block_box,.grid_item_content, .big_block .grid_item_content, .card_news, .card, .card-reveal
+      background-color: $spec_blue!important
+      color: #143c5a!important
+    & .card_news, .card, .card-reveal, .grid_item
+      border: 2px solid #143c5a!important 
+    & .indicators
+      .indicator-item
+        background-color: transparent
+        border: 3px solid #143c5a
+        &.active
+          background-color: #143c5a   
+    & header, footer, .content, .breadcrumb
+      & *
+        a
+          color: #143c5a!important
+          &:hover
+            background-color: #143c5a
+            color: $spec_blue!important
+            & h1, h2, h3, h4, p, span, li
+              color: $spec_blue!important
+          &:focus
+            background-color: #143c5a
+            color: $spec_blue!important
+          &:active
+            background-color: #143c5a
+            color: $spec_blue!important
+    & h1, h2, h3, h4, p, span, li
+      color: #143c5a!important
+    & .btn
+      border: 2px solid #143c5a!important 
+      background: $spec_blue!important 
+      color: #143c5a!important
+      &:hover
+        background: #143c5a!important
+        color: $spec_blue!important    
+    & ul, li, a
+      border-color: #143c5a!important
+      &::before
+    & ul
+      background-color: $spec_blue
+      ul
+        border: 2px solid #143c5a!important
+    & *
+      input, select, .select2-container, .filter, button[data-state="active"],
+        border-color: #143c5a
+    & ::placeholder
+      color: #143c5a!important
+    & i
+      border: none
+      background-color: transparent
+    & .select2-highlighted
+      background-color: #143c5a
+      color: $spec_blue!important
+    & input[type="submit"]:hover
+        background-color: $spec_blue!important
+        color: #143c5a!important
+    & .breadcrumb
+      color: #143c5a
+      &::before
+        background-color: #143c5a
+    & .select2-container.select2-drop-above .select2-choice
+      background: $spec_blue
+    & #toTop
+      border: 2px solid #143c5a!important
+    & .news-item, .doc_item, .sidebar
+        background-color: $spec_blue
+        border: 2px solid #143c5a
+        &:before
+          display: none
+          background-image: linear-gradient(to bottom,rgba(216,216,216,0) 6%,#143c5a 100%)
+        &-img
+          &:before
+            display: none
+            background-image: linear-gradient(to bottom,rgba(216,216,216,0) 6%,#143c5a 100%)
+    & .collective-item
+      background-color: $spec_blue!important
+      border: 2px solid #143c5a!important
+      &-img
+        background-color: $spec_blue!important
+        &:before
+          display: none
+      &-body
+        &:before
+          display: none
+    & input, textarea, .white_box
+        border: 2px solid #143c5a!important 
+    & .portner_item
+      a, i
+        background: transparent!important
+        color: #143c5a!important 
+    & .section_directions_item
+      border: 2px solid #143c5a!important         
+// special-aaFontsize-small=======================================================================
+.special-aaFontsize-small
+  h1, h2, h3
+    font-size: 20px!important  
+  p, span, a
+    font-size: 12px!important
+.special-aaFontsize-normal
+
+.special-aaFontsize-big 
+  h1, h2, h3
+    font-size: 50px!important  
+  p, span, a
+    font-size: 30px!important    
+// settings=======================================================================================
+.special-aaVersion-on
+  .special-settings
+    padding: 20px 0!important
+    font-family: Tahoma, sans-serif!important
+    background: #ccc!important
+    color: #000!important
+  & *
+    a
+      color: #000!important
+      &:hover
+        color: #000!important
+      &:focus
+        color: #000!important
+      &:active
+        color: #000!important
+  .aa-settings-popup
+    display: none!important
+    position: absolute!important
+    top: 100%!important
+    left: 0!important
+    width: 100%!important
+    z-index: 15!important
+    border: solid 2px!important
+  .aa-block
+    float: left!important
+    padding: 0.5em 1em!important
+    a
+      display: inline-block!important
+      padding: 8px 10px!important
+      border: solid 2px!important
+      border-color: #000!important
+      margin-left: -2px!important
+  .aaFontsize
+    .fl-l
+      padding: 8px 10px 8px 0!important
+      display: inline-block!important
+    a
+      float: left!important
+      text-decoration: none!important
+  .aaFontsize-small
+    font-size: 16px!important
+  .aaFontsize-normal
+    font-size: 20px!important
+    font-weight: bold!important
+  .aaFontsize-big
+    font-size: 24px!important
+    font-weight: bold!important
+  .a-current
+    background-color: #fff!important
+    color: #000!important
+  .aaColor
+    padding-left: 0!important
+    padding-right: 0!important
+    a
+      padding: 4px!important
+      span
+        display: inline-block!important
+        padding: 4px .5em!important
+        font-weight: bold!important
+      &.aaColor-black
+        &.a-current
+          border-color: #000!important
+          background: #fff!important
+        span
+          background: #fff!important
+          color: #000!important
+      &.aaColor-yellow
+        &.a-current
+          border-color: #000!important
+          background: $spec_yellow!important
+        span
+          background: $spec_yellow!important
+          color: #000!important
+      &.aaColor-blue
+        &.a-current
+          border-color: #000!important
+          background: #9fd7ff!important
+        span
+          background: #9fd7ff!important
+          color: #143c5a!important
+  .choose-colors
+    list-style: none!important
+    margin: 0!important
+    padding: 0!important
+    li
+      margin-top: .5em!important
